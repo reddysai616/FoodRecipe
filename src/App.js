@@ -22,6 +22,7 @@ setSearch(e.target.value);
 
 
 };
+
 const getSearch = e =>{
   e.preventDefault();
   setQuery(search);
@@ -33,7 +34,7 @@ const getSearch = e =>{
     <div className="App">
    
     <form  onSubmit= {getSearch}   className="search-form">
-      <input type="text"  className="search-bar" value= {search} onChange= {updateSearch} />
+      <input type="text"  className="search-bar" placeholder=" Find Your Recipe " value= {search} onChange= {updateSearch} />
       <button type="submit" className="search-button">search</button>
     </form>
     <div className="recipes">
